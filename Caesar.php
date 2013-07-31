@@ -1,6 +1,8 @@
 <?php
 /**
 * Class that produce Caesar algorithm of message encoding/decoding
+*
+* @since 1.0.0
 */
 
 class Caesar
