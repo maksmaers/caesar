@@ -27,8 +27,10 @@ class Caesar
 
 		foreach ($amessage as $symbol)
 		{
-			if ($num = strpos(self::$symbols, $symbol))
-			{
+			$num = strpos(self::$letters, $symbol);
+            
+	            	if ($num !== false)
+	            	{
 				if ($mode == 'encode')
 				{
 					$num = $num + self::$key;
