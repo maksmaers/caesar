@@ -1,15 +1,16 @@
 <?php
+
 /**
 * Class that produce Caesar algorithm of message encoding/decoding
 *
-* @since 1.0.0
+* @since 1.0.1
 */
-
 class Caesar
 {
 	
-	public  static $key = 12;
-	public  static $symbols = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_-abcdefghijklmnopqrstuvwxyz';
+	public $key = 12;
+	
+	public $symbols = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_-abcdefghijklmnopqrstuvwxyz';
  
 	/**
 	* Method to get decoded or encoded message
@@ -19,7 +20,7 @@ class Caesar
 	* 
 	* @return  string  Return decoded|encoded message
 	*/
-	static function getMessage($message, $mode = 'encode')
+	public function getMessage($message, $mode = 'encode')
 	{
 		$result = '';
 		$amessage = str_split($message);
